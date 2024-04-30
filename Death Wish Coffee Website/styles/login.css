@@ -1,0 +1,75 @@
+:root{
+    --red-color: #e12727;
+}
+#login-form{
+    height: 330px;
+    width: 400px;
+    margin: 60px auto;
+}
+#login-form h1{
+    font-family: 'DM Sans';
+    font-weight: 700;
+    color: white;
+}
+#login-form input{
+    width: 100%;
+    margin: 9px 0px;
+    padding: 10px 16px;
+    outline: none;
+}
+#login-form .para{
+    font-weight: 600;
+    color: #ddd;
+    cursor: pointer;
+    &:hover{
+        color: white;
+    }
+}
+#login-form button{
+    background-color: var(--red-color);
+    color: white;
+    border: none;
+    padding: 7px 40px 10px;
+    margin-top: 15px;
+}
+#login-form h5{
+    font-size: 16px;
+    margin-top: 8px;
+    & a{
+        color: #ddd;
+        letter-spacing: 1px;
+        &:hover{
+            color: white;
+        }
+    }
+}
+/* for Scroll bar */
+.cart-content{
+    height: 85vh;
+    overflow-y: scroll;
+    border-bottom: 1px solid #585858;
+}
+#style-1::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	border-radius: 10px;
+	background-color: black;
+}
+#style-1::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: black;
+}
+#style-1::-webkit-scrollbar-thumb
+{
+	border-radius: 8px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #747474;
+}
+/* for media query */
+@media screen and (max-width: 480px){
+    #login-form{
+        width: 100%;
+        padding: 0px 10px;
+    }
+}

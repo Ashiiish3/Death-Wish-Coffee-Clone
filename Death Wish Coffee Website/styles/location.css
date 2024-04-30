@@ -1,0 +1,63 @@
+:root{
+    --red-color: #e12727;
+}
+#location{
+    padding: 80px 0px;
+}
+#location .row{
+    width: 550px;
+}
+#location .row .name input{
+    width: 256px;
+    height: 40px;
+    margin-bottom: 10px;
+    border: none;
+    padding: 0px 10px;
+    background-color: rgb(226, 226, 226);
+}
+#location .row #email{
+    width: 524px;
+    height: 40px;
+    margin-bottom: 10px;
+    border: none;
+    padding: 0px 10px;
+    background-color: rgb(226, 226, 226);
+}
+#location textarea{
+    width: 524px;
+    height: 200px;
+    padding: 5px 10px;
+    border: none;
+    margin-bottom: 10px;
+    background-color: rgb(226, 226, 226);
+}
+#location button{
+    height: 50px;
+    width: 200px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: var(--red-color);
+    border: 2px solid var(--red-color);
+    &:hover{
+        background-color: white;
+        transition: all 0.5s;
+    }
+}
+@media screen and (max-width: 480px){
+    #location .row,
+    #location .row .name,
+    #location .row .name input,
+    #location .row #email,
+    #location .row textarea{
+        width: 100%;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px){
+    #location .row,
+    #location .row .name,
+    #location .row .name input,
+    #location .row #email,
+    #location .row textarea{
+        width: 100%;
+    }
+}

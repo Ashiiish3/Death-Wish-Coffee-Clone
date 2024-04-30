@@ -1,0 +1,258 @@
+.slider h1,
+.seller h1{
+    text-align: center;
+    font-size: 55px;
+}
+#image-container,
+#seller-image-container{
+    display: flex;
+    width: 100%;
+    height: 560px;
+    overflow: hidden;
+}
+.slider i,
+.seller i{
+    color: var(--red-color);
+    font-size: 60px;
+    line-height: 45px;
+}
+#item #title{
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 700;
+}
+#item #price, #rating{
+    font-weight: 500;
+}
+#item p span{
+    cursor: pointer;
+}
+#item #title a, #price{
+    color: white;
+    padding: 5px 0px 0px;
+    text-decoration: none;
+}
+#item #title a:hover{
+    color: var(--red-color);
+    cursor: pointer;
+}
+#item #add-cart{
+    border: 1px solid var(--red-color);
+    width: 100%;
+    padding: 5px 0px;
+    margin-top: 10px;
+    background-color: transparent;
+    color: white;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    display: none;
+    & i{
+        font-size: 17px;
+        color: white;
+        margin-left: 10px;
+    }
+}
+#item:hover #add-cart{
+    display: block;
+}
+#item #image{
+    overflow: hidden;
+    & img{
+        transition: 0.5s all;
+    }
+}
+#item:hover #image img{
+    transform: scale(1.05);
+}
+.sub-part{
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../Public/images/Subscription-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.sub-part .sub-content{
+    padding: 7.1% 0px;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    & h1{
+        font-size: 64px;
+        width: 50%;
+        line-height: 60px;
+        margin-top: 10px;
+    }
+    & .sub-para{
+        font-weight: 500;
+        width: 50%;
+        text-transform: lowercase;
+        margin-bottom: 10px;
+    }
+    & button{
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 600;
+        background-color: var(--red-color);
+        cursor: pointer;
+        font-family: sans-serif;
+        padding: 7px 14px;
+        border: 2px solid var(--red-color);
+        &:hover{
+            background-color: black;
+            transition: all 0.5s;
+        }
+    }
+}
+.content{
+    margin: 60px auto;
+}
+.content .row .image-box{
+    width: 32.1%;
+    position: relative;
+    overflow: hidden;
+}
+.content .row .image-box img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s all;
+}
+.content .row .image-box img:hover{
+    transform: scale(1.05);
+}
+.content .row .image-box p{
+    position: absolute;
+    bottom: 0%;
+    left: 36.5%;
+    z-index: 100;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 700;
+    & a{
+        text-decoration: none;
+        color: white;
+        &:hover{
+            color: var(--red-color);
+        }
+    }
+}
+/* for mobile devices */
+@media screen and (max-width: 480px){
+    .slider h1,
+    .seller h1{
+        font-size: 25px;
+    }
+    .slider i,
+    .seller i{
+        font-size: 40px;
+    }
+    #image-container,
+    #seller-image-container{
+        height: 430px;
+    }
+    #image-container img,
+    #seller-image-container img{
+        height: 239px;
+    }
+    .sub-part .sub-content{
+        padding-left: 20px;
+    }
+    .sub-part .sub-content .sub-para{
+        font-size: 15px;
+        width: 90%;
+    }
+    .sub-part .sub-content h1{
+        font-size: 25px;
+        line-height: 30px;
+        width: 90%;
+    }
+    .content .row .image-box{
+        width: 95%;
+    }
+    .content .row .image-box p{
+        font-size: 20px;
+        margin: 20px 10px;
+    }
+    #item #add-cart{
+        display: block;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px){
+    .sub-part .sub-content{
+        padding-left: 20px;
+    }
+    .sub-part .sub-content .sub-para{
+        font-size: 15px;
+        width: 90%;
+    }
+    .sub-part .sub-content h1{
+        font-size: 25px;
+        line-height: 30px;
+        width: 90%;
+    }
+    .content .row .image-box{
+        width: 95%;
+    }
+    .content .row .image-box p{
+        font-size: 20px;
+        margin: 20px 10px;
+    }
+    .slider h1,
+    .seller h1{
+        font-size: 30px;
+    }
+    .slider i,
+    .seller i{
+        font-size: 40px;
+    }
+    #image-container,
+    #seller-image-container{
+        height: 540px;
+    }
+    #image-container img,
+    #seller-image-container img{
+        height: 360px;
+    }
+}
+@media (min-width: 769px) and (max-width: 989px){
+    .sub-part .sub-content{
+        padding-left: 20px;
+    }
+    .sub-part .sub-content .sub-para{
+        font-size: 15px;
+        width: 90%;
+    }
+    .sub-part .sub-content h1{
+        font-size: 25px;
+        line-height: 30px;
+        width: 90%;
+    }
+    .content .row .image-box{
+        width: 95%;
+    }
+    .content .row .image-box p{
+        font-size: 20px;
+        margin: 20px 10px;
+    }
+}
+@media (min-width: 990px) and (max-width: 1400px){
+    .sub-part .sub-content{
+        padding-left: 20px;
+    }
+    .sub-part .sub-content .sub-para{
+        font-size: 15px;
+        width: 90%;
+    }
+    .sub-part .sub-content h1{
+        font-size: 45px;
+        line-height: 50px;
+        width: 60%;
+    }
+    .content .row .image-box{
+        width: 95%;
+    }
+    .content .row .image-box p{
+        font-size: 20px;
+        margin: 20px 10px;
+    }
+}

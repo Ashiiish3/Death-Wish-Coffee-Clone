@@ -1,0 +1,37 @@
+:root{
+    --red-color: #e12727;
+}
+#signup-form{
+    height: 470px;
+    width: 400px;
+    margin: 60px auto;
+}
+#signup-form h1{
+    font-family: 'DM Sans';
+    font-weight: 700;
+    color: white;
+}
+#signup-form input{
+    width: 100%;
+    margin: 6px 0px;
+    padding: 10px 16px;
+    outline: none;
+}
+#signup-form button{
+    background-color: var(--red-color);
+    color: white;
+    border: none;
+    padding: 7px 40px 10px;
+    margin-top: 25px;
+}
+#signup-form .error{
+    color: white;
+    margin-bottom: 6px;
+}
+/* for media query */
+@media screen and (max-width: 480px){
+    #signup-form{
+        width: 100%;
+        padding: 0px 15px;
+    }
+}
