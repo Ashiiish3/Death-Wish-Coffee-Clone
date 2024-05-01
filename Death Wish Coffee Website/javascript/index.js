@@ -8,7 +8,7 @@ const sellerRightArrow = document.getElementById("seller-right")
 const sellerImageContainer = document.getElementById("seller-image-container")
 // First Slider
 function fetchData(){
-    fetch("http://localhost:3000/data").then((response)=>response.json()).then((data)=>productCardList(data)).catch((err)=>console.log(err))
+    fetch("https://json-server-10.onrender.com/data").then((response)=>response.json()).then((data)=>productCardList(data)).catch((err)=>console.log(err))
 }
 fetchData()
 function productCardList(array){
@@ -54,7 +54,7 @@ leftArrow.addEventListener("click",()=>{
 })
 // Second Slider
 function fetchsellerData(){
-    fetch('http://localhost:3000/seller-Data').then((resp)=>resp.json()).then((data)=>sellerCardList(data)).catch((err)=>console.log(err))
+    fetch('https://json-server-10.onrender.com/seller-Data').then((resp)=>resp.json()).then((data)=>sellerCardList(data)).catch((err)=>console.log(err))
 }
 fetchsellerData()
 function sellerCard(image, title, price, rating, id, star, description){

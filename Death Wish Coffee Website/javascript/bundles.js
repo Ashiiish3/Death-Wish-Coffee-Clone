@@ -2,7 +2,7 @@ const bundleData = document.querySelector("#bundleData")
 const bundleCount = document.querySelector("#bundle-count")
 let allData = []
 function fetchBundleData(){
-    fetch("http://localhost:3000/bundles_Data").then((res)=>res.json()).then((data)=>{
+    fetch("https://json-server-10.onrender.com/bundles_Data").then((res)=>res.json()).then((data)=>{
         bundleCount.innerText = data.length
         allData = data
         allBundleProducts(data)

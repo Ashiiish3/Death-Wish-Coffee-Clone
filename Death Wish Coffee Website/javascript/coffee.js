@@ -2,7 +2,7 @@ const allProducts = document.querySelector("#allProducts")
 const countProducts = document.querySelector("#product-count")
 let allData = []
 function fetchCoffeeData(){
-    fetch("http://localhost:3000/coffee_data").then((res)=>res.json()).then((data)=>{
+    fetch("https://json-server-10.onrender.com/coffee_data").then((res)=>res.json()).then((data)=>{
         countProducts.innerText = data.length
         allData = data;
         allCoffeeProducts(data)

@@ -38,14 +38,14 @@ document.addEventListener("click", (e)=>{
     }
 })
 function addToCart(id){
-        fetch(`http://localhost:3000/data/${id}`).then((res)=>res.json()).then((data)=>{
+        fetch(`https://json-server-10.onrender.com/data/${id}`).then((res)=>res.json()).then((data)=>{
             let addObj = {
                 "image": data.image,
                 "title": data.title,
                 "price": data.price,
                 "id": data.id
             }
-            fetch("http://localhost:3000/addToCartData", {
+            fetch("https://json-server-10.onrender.com/addToCartData", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -55,14 +55,14 @@ function addToCart(id){
         }).then((err)=>console.log(err))
 }
 function secondAddCart(id){
-    fetch(`http://localhost:3000/seller-Data/${id}`).then((res)=>res.json()).then((data2)=>{
+    fetch(`https://json-server-10.onrender.com/seller-Data/${id}`).then((res)=>res.json()).then((data2)=>{
             let addObj2 = {
                 "image": data2.image,
                 "title": data2.title,
                 "price": data2.price,
                 "id": data2.id
             }
-            fetch("http://localhost:3000/addToCartData", {
+            fetch("https://json-server-10.onrender.com/addToCartData", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -73,7 +73,7 @@ function secondAddCart(id){
 }
 // fetch add to cart data
 function fetchaddData(){
-    fetch(`http://localhost:3000/addToCartData`).then((resp)=>resp.json()).then((addData)=>{
+    fetch(`https://json-server-10.onrender.com/addToCartData`).then((resp)=>resp.json()).then((addData)=>{
         allAddtoCart(addData)
     })
 }
@@ -107,7 +107,7 @@ function allAddtoCart(allData){
 }
 // for delete from add to cart
 function deleteformAddtoCart(id){
-    fetch(`http://localhost:3000/addToCartData/${id}`, {
+    fetch(`https://json-server-10.onrender.com/addToCartData/${id}`, {
         method: "DELETE",
     })
 }
@@ -126,14 +126,14 @@ document.addEventListener("click", (e)=>{
     }
 })
 function addToCartBox(id){
-    fetch(`http://localhost:3000/coffee_data/${id}`).then((res)=>res.json()).then((data)=>{
+    fetch(`https://json-server-10.onrender.com/coffee_data/${id}`).then((res)=>res.json()).then((data)=>{
         let coffeeData ={
             "image": data.image_url,
             "title": data.name,
             "price": data.regular_price,
             "id": data.id
         }
-        fetch("http://localhost:3000/addToCartData", {
+        fetch("https://json-server-10.onrender.com/addToCartData", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -149,14 +149,14 @@ document.addEventListener("click", (e)=>{
     }
 })
 function addToCartMerchData(id){
-    fetch(`http://localhost:3000/merch_Data/${id}`).then((res)=>res.json()).then((merchdata)=>{
+    fetch(`https://json-server-10.onrender.com/merch_Data/${id}`).then((res)=>res.json()).then((merchdata)=>{
         let merchData ={
             "image": merchdata.image,
             "title": merchdata.name,
             "price": merchdata.price,
             "id": merchdata.id
         }
-        fetch("http://localhost:3000/addToCartData", {
+        fetch("https://json-server-10.onrender.com/addToCartData", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -173,14 +173,14 @@ document.addEventListener("click", (e)=>{
 })
 function addToCartBundleData(id){
     console.log(id)
-    fetch(`http://localhost:3000/bundles_Data/${id}`).then((res)=>res.json()).then((bundledata)=>{
+    fetch(`https://json-server-10.onrender.com/bundles_Data/${id}`).then((res)=>res.json()).then((bundledata)=>{
         let bundleData ={
             "image": bundledata.image,
             "title": bundledata.name,
             "price": bundledata.price,
             "id": bundledata.id
         }
-        fetch("http://localhost:3000/addToCartData", {
+        fetch("https://json-server-10.onrender.com/addToCartData", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",

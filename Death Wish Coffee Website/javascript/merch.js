@@ -2,7 +2,7 @@ const merchProducts = document.querySelector("#merchProducts")
 const countMerchProduct = document.querySelector("#merchProduct-count")
 let allData = []
 function fetchMerchData(){
-    fetch("http://localhost:3000/merch_Data").then((res)=>res.json()).then((data)=>{
+    fetch("https://json-server-10.onrender.com/merch_Data").then((res)=>res.json()).then((data)=>{
         countMerchProduct.innerText = data.length
         allData = data
         allMerchProducts(data)
