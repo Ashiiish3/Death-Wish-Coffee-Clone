@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Death Wish Coffee</title>
+    <title>Document</title>
     <!-- Bootstrap Files -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- CSS File -->
-    <link rel="stylesheet" href="../styles/index.css">
-    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="location.css">
+    <link rel="stylesheet" href="main.css">
     <!-- Remix Icon File -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Font Family File -->
-    <link rel="stylesheet" href="../Public/Font Family/sans.css">
-    <link rel="stylesheet" href="../Public/Font Family/DM sans.css">
+    <link rel="stylesheet" href="./Public/Font Family/sans.css">
+    <link rel="stylesheet" href="./Public/Font Family/DM sans.css">
 </head>
 <body>
     <!-- Header Section -->
     <div class="navbar-header container-fluid position-sticky top-0">
         <header class="container grid grid-col--four ps-3 p-sm-0 p-md-0 p-lg-0">
             <div class="logo">
-                <a href="index.html" class="mt-1"><img src="../Public/Images/logo.avif" alt=""></a>
+                <a href="index.html" class="mt-1"><img src="./Public/Images/logo.avif" alt=""></a>
             </div>
             <div class="d-flex align-items-cente justify-content-between">
                 <div class="menu-icon">
@@ -63,66 +64,28 @@
             <div class="search-section">
                 <input type="text" placeholder="Search">
                 <i class="ri-search-fill" id="search-icon"></i>
-                <span id="search-close-icon"><i class="ri-close-line"></i></span>
+                <span><i class="ri-close-line" id="search-close-icon"></i></span>
             </div>
         </div>
     </div>
-    <!-- Poster Section -->
-    <main class="desktop container-fluid w-100">
-        <div class="desktop-content">
-            <h1 class="text-white">New Flavor: Almond Afterlife</h1>
-            <p class="text-white">Boasting notes of roasted almonds and sweet, fresh biscotti, dig yourself out of your tomb of a to-do list with a medium roast could wake the dead. Available exclusively at deathwishcoffee.com.</p>
-            <button class="me-2"><a href="#" class="text-white text-decoration-none">shop Almond Afterlife</a></button>
-            <button><a href="coffee.html" class="text-white text-decoration-none">shop all coffee</a></button>
-        </div>
-    </main>
-    <!-- Slider Section -->
-    <header class="slider mt-5 container-fluid">
-        <h1 class="text-white text-uppercase mb-3">New Arrivals</h1>
-        <div class="slideshow d-flex justify-content-between align-items-center">
-            <i class="ri-arrow-drop-left-line" id="left"></i>
-            <div id="image-container">
-            </div>
-            <i class="ri-arrow-drop-right-line" id="right"></i>
-        </div>
-    </header>
-    <!-- subscription Section -->
-    <section class="sub-part container-fluid">
-        <div class="sub-content container">
-            <p class="text-white m-0">The society of strong coffee</p>
-            <h1 class="text-white">save 30% off your first Shipment</h1>
-            <p class="sub-para text-white">Like a secret handshake, your status in the Society of Strong Coffee also earns you exclusive access to subscriber-only merch, events, forums, and so much more. Start a subscription today to start reaping the benefits.</p>
-            <button><a href="errorPage.html" class="text-decoration-none text-white">Start a coffee Subscription</a></button>
-        </div>
-    </section>
-    <!-- Seller Section -->
-    <section class="seller mt-5 container-fluid">
-        <h1 class="text-white text-uppercase mb-3">Best Sellers</h1>
-        <div class="slideshow d-flex justify-content-between align-items-center">
-            <i class="ri-arrow-drop-left-line" id="seller-left"></i>
-            <div id="seller-image-container">
-            </div>
-            <i class="ri-arrow-drop-right-line" id="seller-right"></i>
-        </div>
-    </section>
-    <!-- coffee merch and bundles section -->
-    <div class="container-fluid">
-        <section class="container content">
-            <div class="row">
-                <div class="col-lg-4 image-box p-0 m-2 bg-info">
-                    <img src="../Public/images/coffee image.webp" alt="">
-                    <p><a href="coffee.html">Coffee</a></p>
-                </div>
-                <div class="col-lg-4 image-box p-0 m-2 bg-success">
-                    <img src="../Public/images/merch image.webp" alt="">
-                    <p><a href="merch.html">Merch</a></p>
-                </div>
-                <div class="col-lg-4 image-box p-0 m-2 bg-danger">
-                    <img src="../Public/images/bundle image.webp" alt="">
-                    <p><a href="bundles.html">Bundles</a></p>
+    <div class="container-fluid bg-white" id="location">
+        <div class="container">
+            <div class="row m-auto">
+                <h5>Contact Info</h5>
+                <div class="col-lg-12">
+                    <div class="name">
+                        <input type="text" placeholder="Full Name" class="col-5 me-sm-2 me-md-2 me-lg-2">
+                        <input type="text" placeholder="Zip Code" class="col-5">
+                    </div>
+                    <div class="col-lg-12">
+                        <input type="text" placeholder="Email" id="email">
+                    </div>
+                    <textarea name="" id="" placeholder="Favorite Retailers"></textarea>
+                    <textarea name="" id="" placeholder="Comments"></textarea>
+                    <button>Submit</button>
                 </div>
             </div>
-        </section>
+        </div>
     </div>
     <!-- Footer Section -->
     <footer>
@@ -137,7 +100,7 @@
             <div class="container p-0 w-100">
                 <div class="grid footer-col-four">
                     <div class="text-center text-lg-start mb-4 mb-lg-0 logo-image">
-                        <a href="index.html"><img src="../Public/images/logo.avif" alt="" height="140px"></a>
+                        <a href="index.html"><img src="./Public/images/logo.avif" alt="" height="140px"></a>
                     </div>
                     <div class="company-details">
                         <h5 class="text-uppercase mb-3">Company</h5>
@@ -178,9 +141,6 @@
             </div>
         </section>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
-<script type="module" src="../javascript/index.js"></script>
-<script src="../javascript/main.js"></script>
-
+<script src="main.js"></script>
 </html>

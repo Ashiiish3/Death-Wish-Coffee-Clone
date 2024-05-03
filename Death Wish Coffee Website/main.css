@@ -95,7 +95,7 @@ body{
 .desktop{
     height: 88vh;
     width: 100%;
-    background: url('../Public/images/background\ image.webp');
+    background: url('./Public/images/background\ image.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
