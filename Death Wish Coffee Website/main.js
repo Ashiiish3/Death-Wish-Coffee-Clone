@@ -24,7 +24,6 @@ let cartCount = document.querySelector(".cart-count")
 document.addEventListener("click", (e)=>{
     if(e.target.classList.contains("addCartButton")){
         addToCart(e.target.dataset.id)
-        
     } 
 })
 document.addEventListener("click", (e)=>{
@@ -115,7 +114,7 @@ function deleteformAddtoCart(id){
         method: "DELETE",
     },setTimeout(() => {
         window.location.reload(true)
-    }, 300))
+    }, 500))
 }
 let arr = []
 function totalAmount(addAllData){
