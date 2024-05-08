@@ -21,10 +21,10 @@ closeBtn.addEventListener("click", ()=>{
 
 let cartContainer = document.querySelector(".cart-content")
 let cartCount = document.querySelector(".cart-count")
-
 document.addEventListener("click", (e)=>{
     if(e.target.classList.contains("addCartButton")){
         addToCart(e.target.dataset.id)
+        
     } 
 })
 document.addEventListener("click", (e)=>{
@@ -50,8 +50,10 @@ function addToCart(id){
                 headers: {
                     "Content-Type": "application/json",
                 },
-                body: JSON.stringify(addObj)
-            })
+                body: JSON.stringify(addObj)   
+            },setTimeout(() => {
+                window.location.reload(true)
+            }, 300))
         }).then((err)=>console.log(err))
 }
 function secondAddCart(id){
@@ -68,7 +70,9 @@ function secondAddCart(id){
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify(addObj2)
-            })
+            },setTimeout(() => {
+                window.location.reload(true)
+            }, 300))
         }).then((err)=>console.log(err))
 }
 // fetch add to cart data
@@ -109,7 +113,9 @@ function allAddtoCart(allData){
 function deleteformAddtoCart(id){
     fetch(`https://json-server-10.onrender.com/addToCartData/${id}`, {
         method: "DELETE",
-    })
+    },setTimeout(() => {
+        window.location.reload(true)
+    }, 300))
 }
 let arr = []
 function totalAmount(addAllData){
@@ -139,7 +145,9 @@ function addToCartBox(id){
               "Content-Type": "application/json",
             },
             body: JSON.stringify(coffeeData),
-        })
+        },setTimeout(() => {
+            window.location.reload(true)
+        }, 300))
     }).then((err)=>console.log(err))
 }
 // for merch data add to cart
@@ -162,7 +170,9 @@ function addToCartMerchData(id){
               "Content-Type": "application/json",
             },
             body: JSON.stringify(merchData),
-        })
+        },setTimeout(() => {
+            window.location.reload(true)
+        }, 300))
     }).then((err)=>console.log(err))
 }
 // for bundles data add to cart
@@ -186,7 +196,9 @@ function addToCartBundleData(id){
               "Content-Type": "application/json",
             },
             body: JSON.stringify(bundleData),
-        })
+        },setTimeout(() => {
+            window.location.reload(true)
+        }, 300))
     }).then((err)=>console.log(err))
 }
 // in media query for menu-bar
