@@ -3,7 +3,7 @@
 ### Introduction
 Hello Everyone! This documentation provides an overview of Death Wish Coffee. This project is clone of Death wish coffee website which is a coffee brand based in the United States. Their coffee is primarily sold online, but can also be found in grocery stores across the United States. This project was complete with 10 days and  it showcases the usage of various technologies, including JavaScript, HTML, CSS, and bootstrap framework. 
 ### Project Details
-- Project Name: Death with coffee Clone (https://death-wish-coffee-website.vercel.app/)
+- Project Name: Death wish coffee Clone (https://death-wish-coffee-website.vercel.app/)
 - Real website: deathwishcoffee.com (https://www.deathwishcoffee.com/)
 - Project Duration: 10 Days
 - Usage Tools: HTML5, CSS3, Javascript, Bootstrap, JSON-Server
